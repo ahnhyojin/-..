@@ -1,0 +1,30 @@
+{% extends 'base.html' %}   <!-- 우선순위 가장 위! 가장 먼저 써주기-->
+{% block contents %}
+<style>
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+</style>
+
+<div class= 'container'>
+        <form action="{% url 'create' %}" >
+            제목:
+            <input type="text" name="title">
+            <br><br>
+            <textarea cols = "50" rows = "10" name = "fulltext"></textarea>
+            <br>
+            <input class="btn btn-light" type = "submit" value = "요청">
+        </form>
+        </div>
+
+
+<footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+            <a href="#">Back to top</a>
+            </p>
+        </div>
+        </footer>
+
+{% endblock %}
