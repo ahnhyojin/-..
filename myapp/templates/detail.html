@@ -25,7 +25,7 @@
      <img src = "{{posts.image.url}}" height = 300 ><br><br>
     <p>{{posts.body}}</p></div>
    <section class="text-right"><a href="{% url 'index' %}"><button type="button" class="btn btn-info">홈으로</button></a></section>
-
+<br>
    {% if posts.author == user %}  
    <section class="text-right"><input class="btn btn-light" type = "submit" value = "수정하기"></section>
    {% endif %}

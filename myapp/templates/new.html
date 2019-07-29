@@ -6,13 +6,13 @@
 <form action="{% url 'create' %}" method = "POST"  enctype = "multipart/form-data">
   {% csrf_token %}
     제목:
-	<input type="text" name="title">
+	<input type="text" name="title" style="width:700px;" >
     <br><br>
-    <textarea cols = "50" rows = "10" name = "fulltext"></textarea>
+    <textarea  cols = "120" rows = "20"  name = "fulltext"></textarea>
     <br>
     <input class="upload_image" type="file" name="image">
     <br><br>
-    <input class="btn btn-light" type = "submit" value = "제출하기">
+    <input class="btn btn-light" type = "submit" value = "글쓰기">
 </form>
 </div>
 
